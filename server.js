@@ -14,12 +14,8 @@ const PORT = process.env.PORT || 5000;
 
 // Middleware
 app.use(express.json());
-// app.use(cors());
+app.use(cors());
 
-app.use(cors({
-    origin: 'https://nrs-food-delivery-frontend.vercel.app',
-    credentials: true
-}));
 
 // Connect to database
 connectDB();

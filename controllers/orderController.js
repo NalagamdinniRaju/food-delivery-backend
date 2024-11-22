@@ -7,8 +7,8 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY)
 // Placing user order for fronted 
 const placeOrder = async (req, res) => {
     // const fronted_url = "http://localhost:5173"
-    const fronted_url = "https://nrs-food-delivery-frontend.vercel.app/"
-    // const fronted_url = "https://nrs-food-delivery.netlify.app/"
+    // const fronted_url = "https://nrs-food-delivery-frontend.vercel.app/"
+    const fronted_url = "https://nrs-food-delivery.netlify.app/"
 
     try {
         const newOrder = new orderModel({
